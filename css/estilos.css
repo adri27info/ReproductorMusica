@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+  width: 30%;
+  background-color: white;
+  margin: 20px auto;
+  min-height: 100vh;
+}
+
+div.container div.listadoCanciones {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.listadoCanciones div.cancion {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+div.listadoCanciones div.rango {
+  width: 100%;
+}
+
+div.rango input {
+  width: 100%;
+}
+
+span.material-symbols-outlined {
+  width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.nombreCancion h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.listadoCanciones div.cancion {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  div.cancion div.nombreCancion {
+    width: 100%;
+    text-align: center;
+  }
+
+  div.cancion div.opcionesCancion {
+    width: 100%;
+    text-align: center;
+  }
+}

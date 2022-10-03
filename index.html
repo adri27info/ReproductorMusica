@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor de musica</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="listadoCanciones">
+        <div class="cancion">
+          <div class="nombreCancion">
+            <h3>Despacito</h3>
+          </div>
+          <div class="opcionesCancion">
+            <span class="material-symbols-outlined" id="play_Despacito">
+              play_arrow
+            </span>
+            <span class="material-symbols-outlined" id="stop_Despacito">
+              stop
+            </span>
+            <a href="audios/Despacito.mp3" download>
+              <span class="material-symbols-outlined"> file_download </span>
+            </a>
+          </div>
+        </div>
+        <div class="cancion">
+          <div class="nombreCancion">
+            <h3>Danza Kuduro</h3>
+          </div>
+          <div class="opcionesCancion">
+            <span class="material-symbols-outlined" id="play_DanzaKuduro">
+              play_arrow
+            </span>
+            <span class="material-symbols-outlined" id="stop_DanzaKuduro">
+              stop
+            </span>
+            <a href="audios/DanzaKuduro.mp3" download>
+              <span class="material-symbols-outlined"> file_download </span>
+            </a>
+          </div>
+        </div>
+        <div class="cancion">
+          <div class="nombreCancion">
+            <h3>Prohibidox</h3>
+          </div>
+          <div class="opcionesCancion">
+            <span class="material-symbols-outlined" id="play_Prohibidox">
+              play_arrow
+            </span>
+            <span class="material-symbols-outlined" id="stop_Prohibidox">
+              stop
+            </span>
+            <a href="audios/Prohibidox.mp3" download>
+              <span class="material-symbols-outlined"> file_download </span>
+            </a>
+          </div>
+        </div>
+        <div class="rango">
+          <input
+            type="range"
+            max="1"
+            min="0"
+            step="0.1"
+            class="volumen"
+            id="volumen"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
