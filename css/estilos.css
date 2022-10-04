@@ -42,6 +42,10 @@ span.material-symbols-outlined {
   width: 30px;
 }
 
+.ocultar {
+  display: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   div.nombreCancion h3 {
     font-size: 15px;
